@@ -1,0 +1,28 @@
+
+
+<div class="container">
+
+
+
+ 
+
+<input type="text"  (keyup.enter)="createPost(title)"  #title>
+
+<ul>
+
+    <li *ngFor="let post of posts">
+
+        <button (click)="deletePost(post)" class="button">Delete</button>
+
+        {{posts}}
+
+
+    </li>
+</ul>
+
+
+
+
+
+
+</div>
